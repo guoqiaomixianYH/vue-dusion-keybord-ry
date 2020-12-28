@@ -27,7 +27,7 @@
       :blurHide="false"
       size="mini"
     ></vue-dusion-keyboard>-->
-    <VueDusionKeyboard ref="zzz" scope=".scope-test" @keyvalue="kkk" @del="del" bottom="10"></VueDusionKeyboard>
+    <VueDusionKeyboard ref="zzz" scope=".scope-test" @keyvalue="kkk" @del="del"></VueDusionKeyboard>
     <!-- <VueDusionKeyboard @keyvalue="kkk" @del="del"></VueDusionKeyboard> -->
     <br />
     <br />
@@ -91,14 +91,6 @@ export default class App extends Vue {
 </script>
 
 <style lang="scss">
-html{
-  @media screen and (max-width: 1921px) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: 1367px) {
-    font-size: 10px;
-  }
-}
 #app {
   // height: 1500px;
   // width: 1080px;
