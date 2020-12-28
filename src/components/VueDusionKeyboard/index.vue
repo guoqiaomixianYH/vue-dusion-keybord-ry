@@ -617,14 +617,13 @@ export default Vue.extend({
 });
 </script>
 
-
 <style lang="scss" scoped>
 @import "./style/mini.scss";
 i {
   font-style: normal;
 }
 .num-del > svg {
-  margin-top: 10px;
+  margin-top: 0.6rem;
 }
 .def-del > svg {
   margin-top: 0px;
@@ -639,6 +638,7 @@ i {
   // width: 0px;
   // min-width: $min-width;
   // height: 300px;
+  
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -652,23 +652,23 @@ i {
     }
   }
   .pinyin {
-    margin-top: 14px;
+    margin-top: 0.87rem;
     box-sizing: border-box;
-    height: 30px;
+    height: 1.87rem;
     background: #fff;
     border: 1px solid rgba(209, 209, 209, 1);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    padding: 0 20px;
+    border-top-right-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+    padding: 0 1.25rem;
     text-align: left;
     > div span {
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 1.25rem;
+      line-height: 1.87rem;
       font-weight: bold;
     }
   }
   .select-list {
-    height: 50px;
+    height: 3.12rem;
     background: #fff;
     border: 1px solid rgba(209, 209, 209, 1);
     border-top: none;
@@ -681,22 +681,22 @@ i {
     }
     .select-text {
       cursor: pointer;
-      line-height: 50px;
-      font-size: 24px;
+      line-height: 3.12rem;
+      font-size: 1.5rem;
       font-weight: bold;
       & + .select-text {
-        margin-left: 42px;
+        margin-left: 2.6rem;
       }
       &:nth-of-type(1) {
-        margin-left: 20px;
+        margin-left: 1.25rem;
       }
     }
     .page {
       position: absolute;
       top: 0;
-      right: 7px;
-      width: 120px;
-      height: 50px;
+      right: 0.43rem;
+      width: 7.5rem;
+      height: 3.12rem;
       .previous {
         transform: scaleX(2) rotate(180deg);
       }
@@ -706,20 +706,20 @@ i {
         display: inline-block;
         text-align: center;
         transform: scaleX(2);
-        width: 30px;
-        height: 48px;
-        line-height: 48px;
+        width: 1.87rem;
+        height: 3rem;
+        line-height: 3rem;
         background: #344a5d;
         color: #fff;
         border: 1px solid hsl(0, 0%, 84%);
-        border-radius: 5px;
+        border-radius: 0.06rem;
         cursor: pointer;
         &:active {
           background: #fff;
           color: #344a5d;
         }
         & + p {
-          margin-left: 30px;
+          margin-left: 1.87rem;
         }
       }
     }
@@ -727,21 +727,21 @@ i {
   .main-keyboard {
     // width: 1080px;
     display: inline-block;
-    border-radius: 10px;
-    padding: 0 14px 14px 14px;
+    border-radius: 0.62rem;
+    padding: 0 0.87rem 0.87rem 0.87rem;
     background: #e6e6e6;
     // height: 400px;
     .key {
-      height: 60px;
-      line-height: 60px;
-      font-size: 24px;
+      height: 3.75rem;
+      line-height: 3.75rem;
+      font-size: 1.5rem;
       font-weight: 700;
       // width: $key-width;
       background: #fff;
       display: inline-block;
       vertical-align: middle;
-      border-radius: 8px;
-      margin-top: 14px;
+      border-radius: 0.5rem;
+      margin-top: 0.87rem;
       box-shadow: 1px 1px 2px rgba(20, 20, 20, 0.3);
       cursor: pointer;
       &:active {
@@ -766,13 +766,13 @@ i {
       }
     }
     .hand-left-box {
-      width: 150px;
+      width: 9.37rem;
       display: inline-block;
       vertical-align: middle;
       .key {
-        width: 140px;
+        width: 8.75rem;
         margin-left: 0px;
-        margin-top: 20px;
+        margin-top: 1.25rem;
         &:nth-of-type(1) {
           margin-top: 0px;
         }
@@ -780,12 +780,12 @@ i {
     }
     .number {
       // width: $number-width;
-      height: 80px;
-      font-size: 54px;
-      line-height: 80px;
+      height: 5rem;
+      font-size: 3.37rem;
+      line-height: 5rem;
     }
     .cap_change {
-      width: 140px;
+      width: 8.75rem;
       color: #fff;
       background: #344a5d;
       &:active {
@@ -794,16 +794,16 @@ i {
     }
     .key_hide {
       background: #d6d1d0;
-      width: 140px;
+      width: 8.75rem;
       > .jp {
-        height: 55px;
+        height: 3.43rem;
         display: inline-block;
         vertical-align: middle;
       }
       > span {
-        padding-left: 5px;
-        font-size: 16px;
-        line-height: 18px;
+        padding-left: 0.31rem;
+        font-size: 1rem;
+        line-height: 1.12rem;
         display: inline-block;
         vertical-align: middle;
       }
