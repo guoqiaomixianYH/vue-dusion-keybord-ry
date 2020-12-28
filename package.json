@@ -1,6 +1,6 @@
 {
-  "name": "vue-dusion-keyboard-ry",
-  "version": "2.0.2",
+  "name": "vue-dusion-keyboard",
+  "version": "3.0.0",
   "private": false,
   "description": "基于vue.js的web键盘，支持离线模式。",
   "license": "MIT",
@@ -46,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/guoqiaomixianYH/vue-dusion-keybord-ry.git"
+    "url": "https://github.com/dusionlike/vue-dusion-keyboard"
   },
   "browserslist": [
     "> 1%",

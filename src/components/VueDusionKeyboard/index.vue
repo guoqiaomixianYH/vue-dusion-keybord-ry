@@ -394,6 +394,12 @@ export default Vue.extend({
 
       let st_top = (bound.y + bound.height + 10 + toptop) * zoom;
       // console.log(bound);
+      // this.keyboardStyle = {
+      //   position: "fixed",
+      //   left: bodyBound.left + bodyBound.width / 2 - $el.clientWidth / 2 + "px",
+      //   "z-index": "99999",
+      //   top: st_top + "px",
+      // };
       /**
        * 修改 - 支持bottom 适用：输入框太低时，弹框被遮挡问题 by renyong 2020/12/21
        */
@@ -436,14 +442,12 @@ export default Vue.extend({
         element.tagName != "INPUT" ||
         (!this.all && !element.dataset.mode)
       ) {
-        // this.show = false;
-        this.show = true;  //////////////////////////////
+        this.show = false;
       }
     },
 
     HideKey() {
-      // this.show = false;
-      this.show = true;  //////////////////////////////
+      this.show = false;
       this.inputElement && this.inputElement.blur();
     },
     // mousedown(event: MouseEvent) {
@@ -620,7 +624,7 @@ i {
   font-style: normal;
 }
 .num-del > svg {
-  margin-top: 0.6rem;
+  margin-top: 10px;
 }
 .def-del > svg {
   margin-top: 0px;
@@ -635,7 +639,6 @@ i {
   // width: 0px;
   // min-width: $min-width;
   // height: 300px;
-  
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -649,23 +652,23 @@ i {
     }
   }
   .pinyin {
-    margin-top: 0.87rem;
+    margin-top: 14px;
     box-sizing: border-box;
-    height: 1.87rem;
+    height: 30px;
     background: #fff;
     border: 1px solid rgba(209, 209, 209, 1);
-    border-top-right-radius: 0.6rem;
-    border-top-left-radius: 0.6rem;
-    padding: 0 1.25rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0 20px;
     text-align: left;
     > div span {
-      font-size: 1.25rem;
-      line-height: 1.87rem;
+      font-size: 20px;
+      line-height: 30px;
       font-weight: bold;
     }
   }
   .select-list {
-    height: 3.12rem;
+    height: 50px;
     background: #fff;
     border: 1px solid rgba(209, 209, 209, 1);
     border-top: none;
@@ -678,22 +681,22 @@ i {
     }
     .select-text {
       cursor: pointer;
-      line-height: 3.12rem;
-      font-size: 1.5rem;
+      line-height: 50px;
+      font-size: 24px;
       font-weight: bold;
       & + .select-text {
-        margin-left: 2.6rem;
+        margin-left: 42px;
       }
       &:nth-of-type(1) {
-        margin-left: 1.25rem;
+        margin-left: 20px;
       }
     }
     .page {
       position: absolute;
       top: 0;
-      right: 0.43rem;
-      width: 7.5rem;
-      height: 3.12rem;
+      right: 7px;
+      width: 120px;
+      height: 50px;
       .previous {
         transform: scaleX(2) rotate(180deg);
       }
@@ -703,20 +706,20 @@ i {
         display: inline-block;
         text-align: center;
         transform: scaleX(2);
-        width: 1.87rem;
-        height: 3rem;
-        line-height: 3rem;
+        width: 30px;
+        height: 48px;
+        line-height: 48px;
         background: #344a5d;
         color: #fff;
         border: 1px solid hsl(0, 0%, 84%);
-        border-radius: 0.06rem;
+        border-radius: 5px;
         cursor: pointer;
         &:active {
           background: #fff;
           color: #344a5d;
         }
         & + p {
-          margin-left: 1.87rem;
+          margin-left: 30px;
         }
       }
     }
@@ -724,21 +727,21 @@ i {
   .main-keyboard {
     // width: 1080px;
     display: inline-block;
-    border-radius: 0.62rem;
-    padding: 0 0.87rem 0.87rem 0.87rem;
+    border-radius: 10px;
+    padding: 0 14px 14px 14px;
     background: #e6e6e6;
     // height: 400px;
     .key {
-      height: 3.75rem;
-      line-height: 3.75rem;
-      font-size: 1.5rem;
+      height: 60px;
+      line-height: 60px;
+      font-size: 24px;
       font-weight: 700;
       // width: $key-width;
       background: #fff;
       display: inline-block;
       vertical-align: middle;
-      border-radius: 0.5rem;
-      margin-top: 0.87rem;
+      border-radius: 8px;
+      margin-top: 14px;
       box-shadow: 1px 1px 2px rgba(20, 20, 20, 0.3);
       cursor: pointer;
       &:active {
@@ -763,13 +766,13 @@ i {
       }
     }
     .hand-left-box {
-      width: 9.37rem;
+      width: 150px;
       display: inline-block;
       vertical-align: middle;
       .key {
-        width: 8.75rem;
+        width: 140px;
         margin-left: 0px;
-        margin-top: 1.25rem;
+        margin-top: 20px;
         &:nth-of-type(1) {
           margin-top: 0px;
         }
@@ -777,12 +780,12 @@ i {
     }
     .number {
       // width: $number-width;
-      height: 5rem;
-      font-size: 3.37rem;
-      line-height: 5rem;
+      height: 80px;
+      font-size: 54px;
+      line-height: 80px;
     }
     .cap_change {
-      width: 8.75rem;
+      width: 140px;
       color: #fff;
       background: #344a5d;
       &:active {
@@ -791,16 +794,16 @@ i {
     }
     .key_hide {
       background: #d6d1d0;
-      width: 8.75rem;
+      width: 140px;
       > .jp {
-        height: 3.43rem;
+        height: 55px;
         display: inline-block;
         vertical-align: middle;
       }
       > span {
-        padding-left: 0.31rem;
-        font-size: 1rem;
-        line-height: 1.12rem;
+        padding-left: 5px;
+        font-size: 16px;
+        line-height: 18px;
         display: inline-block;
         vertical-align: middle;
       }
