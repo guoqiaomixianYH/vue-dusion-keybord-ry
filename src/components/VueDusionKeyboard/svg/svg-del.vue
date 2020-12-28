@@ -12,7 +12,7 @@ export default Vue.extend({name:'svg-del'})
 </script>
 <style scoped>
 .svg-icon {
-  width: 2.75em;
-  height: 2.75em;
+  width: 2.25em;
+  height: 2.25em;
 }
 </style>
